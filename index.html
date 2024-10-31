@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenGoals - Home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: space-between;
+        }
+
+        /* Header section */
+        header {
+            background-color: #A4D18E; /* Light green background */
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header h1 {
+            color: black;
+            font-size: 36px;
+        }
+
+        /* Middle section for logo */
+        .middle-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            height: 70vh; /* The container height for the logo */
+        }
+
+        /* Ensure the logo spans full width and shows only the middle 70% */
+        .middle-section img {
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            object-position: center; /* Ensures the middle of the image is visible */
+        }
+
+        /* Button container for Sign In and Register buttons */
+        .auth-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .auth-buttons button {
+            padding: 20px 40px;
+            margin: 0 20px;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #A4D18E; /* Green background */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header section -->
+    <header>
+        <h1>GreenGoals</h1>
+    </header>
+
+    <!-- Middle section with the full-width logo (only middle 70% visible) -->
+    <section class="middle-section">
+        <img src="Firefly%20minimalistisch%20logo%20voor%20GreenGoals.%2038698.jpg" alt="Green Goals Logo">
+    </section>
+
+    <!-- Sign In and Register buttons, placed below the logo -->
+    <div class="auth-buttons">
+        <button class="signin-btn" onclick="window.location.href='signin.html'">Sign In</button>
+        <button class="register-btn" onclick="window.location.href='register.html'">Register</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO2-uitstoot</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #A4D18E; /* Light green background */
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        header h1 {
+            color: black;
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .back-to-home {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Image between header and main content */
+        .header-image {
+            width: 100%;
+            height: 40vh; /* Adjusted height to 40% of viewport height */
+            object-fit: cover; /* Ensure the image covers the area without distortion */
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        main h2 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        main p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .content-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 20px auto;
+        }
+
+        .progress-bar {
+            width: 100%;
+            max-width: 400px;
+            height: 30px;
+            background-color: #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 20px auto;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background-color: #76c7c0;
+            width: 75%; /* Example progress */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="mainpage.html" class="back-to-home">Back to Home</a>
+        <h1>CO2-uitstoot</h1>
+    </header>
+
+    <!-- Image placed between header and main content -->
+    <img src="15-tork-sustainability-tarawera-river-header-superwide-3200x1000px.jpg.avif" alt="Header Image" class="header-image">
+
+    <main>
+        <h2>Learn about CO2 emissions</h2>
+        <p>This page contains information about CO2-uitstoot (CO2 emissions).</p>
+
+        <!-- Content image and progress bar -->
+        <img src="20230209152943_marek-piwnicki-WiZOyYqzUss-unsplash.jpg" alt="CO2 Image" class="content-image">
+
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        <p>Progress: 75%</p>
+    </main>
+
+</body>
+</html>
